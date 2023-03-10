@@ -1,0 +1,49 @@
+<p>tabla works!</p>
+
+<div class="contenedor_tabla">
+    <table class="table table-striped tabla1">
+      <thead>
+        <tr>
+          <th scope="col">codmat</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Celular</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Especialización</th>
+          <th scope="col">Eliminar</th>
+        </tr>
+      </thead> 
+
+      <tbody>
+
+        <tr *ngFor="let tabla of tabla">
+          <td>{{tabla.codmat}}</td>
+          <td>{{tabla.materia}}</td>
+          <td>{{tabla.paralelo}}</td>
+          <td>{{tabla.horas}}</td>
+          <td>{{tabla.aula}}</td>
+          <td>{{tabla.ubicacion}}</td>
+          <td>{{tabla.funcion}}</td>
+
+
+          
+          <td>{{tabla.est}}</td>
+          <td>{{tabla.nroSesiones}}</td>
+          <td>{{tabla.lunes}}</td>
+          <td>{{tabla.martes}}</td>
+          <td>{{tabla.miercoles}}</td>
+          <td>{{tabla.jueves}}</td>
+          <td>{{tabla.viernes}}</td>
+          <td>{{tabla.sabado}}</td>
+          <td>{{tabla.hSimul}}</td>
+          <td>{{tabla.fechaI}}</td>
+          <td>{{tabla.fechaF}}</td>
+          <td>{{tabla.horarioF}}</td>
+          <td>{{tabla.codcar}}</td>
+          <td>{{tabla.carrera}}</td>
+          <td>{{tabla.facultad}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+ 
