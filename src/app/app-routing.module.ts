@@ -2,15 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import { ListaComponent } from './lista/lista.component';
 
 
 
 const routes: Routes = [
-
-  { path: 'lay',loadChildren: ()=> import('./layout/layout.module').then(m => m.LayoutModule)},
-  { path: 'tab',loadChildren: ()=> import('./epn/epn.module').then(m => m.EpnModule)},
+  { path: 'lista', component: ListaComponent},
   { path: '**', component: AppComponent},
-
 ];
 
 @NgModule({
